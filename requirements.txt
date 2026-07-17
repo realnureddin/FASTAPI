@@ -5,3 +5,8 @@ psycopg2-binary
 pydantic-settings
 alembic
 email-validator
+python-jose
+passlib
+bcrypt
+python-multipart
+python-dotenv
