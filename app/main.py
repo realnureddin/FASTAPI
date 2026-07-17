@@ -9,7 +9,7 @@ print("--- DEBUG DATABASE PASSWORD IS: ---", settings.database_password)
 
 print(settings.database_password)
 
-models.Base.metadata.create_all(bind=engine)
+# models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
