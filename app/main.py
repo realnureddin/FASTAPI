@@ -13,6 +13,10 @@ print(settings.database_password)
 
 app = FastAPI()
 
+@app.get("/")
+def root():
+    return {"message": "Hello World"}
+
 origins = ["*"]
 
 app.add_middleware(

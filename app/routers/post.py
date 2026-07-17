@@ -11,9 +11,7 @@ router = APIRouter(
     tags=['Posts']
 )
 
-@router.get("/")
-def root():
-    return {"message": "Hello World"}
+
 
 @router.get("/", response_model=list[schemas.PostOut])
 def get_posts(db: Session = Depends(get_db),
